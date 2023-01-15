@@ -41,8 +41,14 @@ nav li {
 /*-------------------
  banner styles 
  ---------------*/
+ .banner-right{
+    width: 40%;
+ }
  .banner{
     text-align: center;
+    /* display: flex; */
+    /* gap: 20px; */
+    margin-top: 50px;
 
  }
  .banner-left{
@@ -261,4 +267,83 @@ nav li {
     }
     .contact-left{
         min-width: 50%;
+    }
+    @media only screen and (max-width:898px)  {
+        .feature-left img{
+            width: 400px;
+        
+        }
+        
+    }
+    @media only screen and (max-width:576px) {
+        .nav-title{
+            font-size: 15px;
+        }
+        nav li{
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        .banner-title{
+            font-size: 25px;
+        }
+        .banner-description{
+            font-size: 15px;
+        }
+        .btn{
+            height: 50px;
+        }
+        .header{
+            padding-bottom: 10px;
+        }
+        .features{
+            grid-template-columns: 1fr;
+        }
+        .features-img img{
+            width: 150px;
+            height: 150px;
+            
+            
+        }
+        .container-title{
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .feature{
+            flex-direction: column;
+        }
+        .feature-left{
+            order: -1;
+        }
+        .feature-left img{
+            width: 100%;
+            height: 100%;
+                }
+                .some-title{
+                    font-size: 18px;
+                }
+                .skills-container{
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 40px;
+                }
+        .sponspores-title{
+            font-size: 18px;
+        }
+        .sponspores-description{
+            font-size: 15px;
+        }
+        .contact{
+            flex-direction: column;
+            padding: 50px;
+        }
+        .contact-left{
+            width: 100%;
+        }
+        .section-title{
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .contact input, textarea{
+            width: 100%;
+        }
+        
     }
